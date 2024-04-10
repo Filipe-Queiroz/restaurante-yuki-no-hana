@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fff70314;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-size: 2.6em;
+}
+
+.container h2 {
+    border-bottom: 3px solid #110b01f7;
+    padding-bottom: 16px;
+    font-size: 2em;
+    color: #110b01f7;
+}
+
+.container h3 {
+    padding-top: 8px;
+    font-size: 1.3em;
+    color: #110b01f7;
+}
+
+
+header {
+    background-color: #110b01f7;
+    padding: 30px;
+    color: #fff;
+    font-weight: bold;
+} 
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form a {
+    padding-left: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+form a:hover {
+    color: #e3d69f;
+}
+
+.sobre-nos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+}
+
+.sobre-nos img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.texto-about {
+    padding-left: 30px;
+}
+
+.texto-about p {
+    padding-top: 32px;
+    font-size: 1.2em;
+    color: #110b01f7;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.pratos {
+    padding-top: 64px;
+}
+
+.itens {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+    list-style: none;
+    padding-top: 32px;
+}
+
+.itens li h3 {
+    margin: 16px 0;
+}
+
+.itens img {
+    width: 320px;
+    max-width: 100%;
+}
+
+.item p {
+    color: #110b01f7;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    padding: 8px 0;
+    border: none;
+    background-color: #110b01f7;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #332711f7;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .container h2 {
+        border-bottom: 3px solid #110b01f7;
+        padding-bottom: 16px;
+        font-size: 2.5em;
+        color: #110b01f7;
+    }
+
+    .container h3 {
+        padding-top: 8px;
+        font-size: 1.8em;
+        color: #110b01f7;
+    }
+    
+    header form a {
+        color: #fff7d3;
+    }
+
+    form a:hover {
+        color: #fff7d3;
+    }
+
+    .sobre-nos {
+        display: block;
+        justify-content: space-between;
+        padding-top: 48px;
+    }
+
+    .sobre-nos img {
+        width: 100%;
+    }
+
+    .sobre-nos h2 {
+        padding-top: 16px;
+    }
+
+    .texto-about {
+        padding-left: 0px;
+    }
+
+    .texto-about p {
+        padding-top: 32px;
+        font-size: 1.4em;
+        color: #110b01f7;
+    }
+
+    .itens {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 4%;
+        row-gap: 10%;
+        list-style: none;
+        padding-top: 50px;
+    }
+
+    .itens img {
+        width: 100%;
+    }
+
+    .item p {
+        color: #110b01f7;
+        font-size: 1.3em;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin-top: 16px;
+        padding: 12px 0;
+        border: none;
+        background-color: #110b01f7;
+        color: #fff;
+        font-size: 1.4em;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        background-color: #110b01f7;
+        padding: 30px;
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    header form {
+        padding-top: 16px;
+    }
+
+    header form a {
+        color: #fff7d3;
+    }
+
+    form a:hover {
+        color: #fff7d3;
+    }
+
+    .container h2 {
+        border-bottom: 3px solid #110b01f7;
+        padding-bottom: 16px;
+        font-size: 2.5em;
+        color: #110b01f7;
+    }
+
+    .container h3 {
+        padding-top: 8px;
+        font-size: 1.8em;
+        color: #110b01f7;
+    }
+
+    .sobre-nos {
+        display: block;
+        justify-content: space-between;
+        padding-top: 48px;
+    }
+
+    .sobre-nos img {
+        width: 100%;
+    }
+
+    .sobre-nos h2 {
+        padding-top: 16px;
+    }
+
+    .texto-about {
+        padding-left: 0px;
+    }
+
+    .texto-about p {
+        padding-top: 32px;
+        font-size: 1.4em;
+        color: #110b01f7;
+    }
+
+    .itens {
+        display: block;
+        grid-template-columns: repeat(1, 48%);
+        list-style: none;
+        padding-top: 50px;
+    }
+
+    .itens img {
+        width: 100%;
+    }
+
+    .item p {
+        color: #110b01f7;
+        font-size: 1.3em;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin: 16px 0 48px 0 ;
+        padding: 12px 0;
+        border: none;
+        background-color: #110b01f7;
+        color: #fff;
+        font-size: 1.4em;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+}
